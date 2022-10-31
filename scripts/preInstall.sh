@@ -1,5 +1,5 @@
-#set env vars
-#set -o allexport; source .env; set +o allexport;
+set env vars
+set -o allexport; source .env; set +o allexport;
 
 mkdir -p -m 750 ./data
 mkdir -p -m 750 ./db_volume
