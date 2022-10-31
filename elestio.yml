@@ -7,14 +7,7 @@ ports:
     public: true
     path: "/"
     isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "2224"
-    targetPort: "2222"
-    targetIP: "172.17.0.1"
-    public: true
-    path: "/"
-    isAuth: false
+
 environments:
   - key: SOFTWARE_VERSION_TAG
     value: "lts-jdk11"
