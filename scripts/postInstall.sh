@@ -1,4 +1,4 @@
 echo "Waiting for app to be ready"
-echo "https://${CI_CD_DOMAIN}"
+echo "https://${DOMAIN}"
 sleep 30s;
 echo "Install finished"
