@@ -21,6 +21,10 @@ environments:
     value: "random_password"
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
+  - key: "INSTALL_ADMIN_USERNAME"
+    value: "root"
+  - key: "INSTALL_ADMIN_PASSWORD"
+    value: "random_password"
 
 config:
   runTime: "dockerCompose"
