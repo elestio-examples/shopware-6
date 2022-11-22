@@ -1,6 +1,8 @@
 set env vars
 set -o allexport; source .env; set +o allexport;
 
+apt install jq -y
+
 mkdir -p -m 750 ./data
 mkdir -p -m 750 ./db_volume
 mkdir -p -m 750 ./shop_volume
