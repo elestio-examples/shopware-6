@@ -8,8 +8,8 @@ services:
       - MYSQL_DATABASE=shopware
       - MYSQL_USER=shopware
       - MYSQL_PASSWORD=shopware
-      - INSTALL_ADMIN_USERNAME=${INSTALL_ADMIN_USERNAME}
-      - INSTALL_ADMIN_PASSWORD=${INSTALL_ADMIN_PASSWORD}
+      # - INSTALL_ADMIN_USERNAME=${INSTALL_ADMIN_USERNAME}
+      # - INSTALL_ADMIN_PASSWORD=${INSTALL_ADMIN_PASSWORD}
   shopware:
     image: shyim/shopware:6.2.0
     restart: always
