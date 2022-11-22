@@ -8,6 +8,8 @@ services:
       - MYSQL_DATABASE=shopware
       - MYSQL_USER=shopware
       - MYSQL_PASSWORD=shopware
+      - INSTALL_ADMIN_USERNAME=${INSTALL_ADMIN_USERNAME}
+      - INSTALL_ADMIN_PASSWORD=${INSTALL_ADMIN_PASSWORD}
   shopware:
     image: shyim/shopware:6.2.0
     restart: always
@@ -17,7 +19,5 @@ services:
       - APP_URL=https://${DOMAIN}
       - DATABASE_HOST=mysql
       - DATABASE_URL=mysql://shopware:shopware@mysql:3306/shopware
-      - INSTALL_ADMIN_USERNAME=${INSTALL_ADMIN_USERNAME}
-      - INSTALL_ADMIN_PASSWORD=${INSTALL_ADMIN_PASSWORD}
     ports:
       - 172.17.0.1:8800:80
