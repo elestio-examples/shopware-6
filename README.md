@@ -15,3 +15,24 @@ You can can open Shopware 6 UI here:
     URL: https://[CI_CD_DOMAIN]
     Login: root
     password: [ADMIN_PASSWORD]
+
+# Configuring email
+
+Once logged in, a window will open, click on next until you reach the Mailer configuration.
+
+Choose Configure own SMTP server
+
+<img src="./steps/step-01.png" style='max-width:200px; width: 100%;'/>
+
+Fill in the following credentials:
+
+    Host: [EMAIL_HOST]
+    Port: [EMAIL_PORT]
+    Username and Password must be empty
+    Encryption: No encryption
+    Authentication method: No authentication
+    Sender address: [MAIL_FROM_ADDRESS]
+
+<img src="./steps/step-02.png" style='max-width:800px; width: 100%;'/>
+
+Then Next, complete other configurations if desired.

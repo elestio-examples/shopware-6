@@ -10,9 +10,7 @@ ports:
 
 environments:
   - key: "MAIL_FROM_ADDRESS"
-    value: "[DOMAIN]"
-  - key: "MAIL_DOMAIN"
-    value: "vm.elestio.app"
+    value: "[DOMAIN]@vm.elestio.app"
   - key: "EMAIL_HOST"
     value: "172.17.0.1"
   - key: "EMAIL_PORT"
