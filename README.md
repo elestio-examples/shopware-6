@@ -22,7 +22,7 @@ Once logged in, a window will open, click on next until you reach the Mailer con
 
 Choose Configure own SMTP server
 
-<img src="./steps/step-01.png" style='max-width:200px; width: 100%;'/>
+<img src="./steps/step-01.png" style='width: 200px; max-width:100%;'/>
 
 Fill in the following credentials:
 
@@ -33,6 +33,6 @@ Fill in the following credentials:
     Authentication method: No authentication
     Sender address: [MAIL_FROM_ADDRESS]
 
-<img src="./steps/step-02.png" style='max-width:800px; width: 100%;'/>
+<img src="./steps/step-02.png" style='width: 800px; max-width:100%;'/>
 
 Then Next, complete other configurations if desired.
