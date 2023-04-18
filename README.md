@@ -10,7 +10,7 @@ Deploy Shopware 6 server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Shopware 6 UI here:
+You can open Shopware 6 UI here:
 
     URL: https://[CI_CD_DOMAIN]
     Login: root
