@@ -8,6 +8,8 @@ services:
       - MYSQL_DATABASE=shopware
       - MYSQL_USER=shopware
       - MYSQL_PASSWORD=shopware
+    volumes:
+      - ./db:/var/lib/mysql
   shopware:
     image: shyim/shopware:${SOFTWARE_VERSION_TAG}
     restart: always
