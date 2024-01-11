@@ -9,6 +9,8 @@ ports:
     isAuth: false
 
 environments:
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "6.2.0"
   - key: "MAIL_FROM_ADDRESS"
     value: "[DOMAIN]@vm.elestio.app"
   - key: "EMAIL_HOST"
