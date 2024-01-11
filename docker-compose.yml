@@ -23,3 +23,13 @@ services:
       - INSTALL_ADMIN_PASSWORD=${ADMIN_PASSWORD}
     ports:
       - 172.17.0.1:8800:80
+    volumes:
+      - ./state:/state
+      - ./plugins:/var/www/html/custom/plugins
+      - ./files:/var/www/html/files
+      - ./jwt:/var/www/html/config/jwt
+      - ./theme:/var/www/html/public/theme
+      - ./media:/var/www/html/public/media
+      - ./thumbnail:/var/www/html/public/thumbnail
+      - ./bundles:/var/www/html/public/bundles
+      - ./sitemap:/var/www/html/public/sitemap
