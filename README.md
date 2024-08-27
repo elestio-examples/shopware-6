@@ -20,7 +20,7 @@ You can open Shopware 6 UI here:
 
 Once logged in, a window will open, click on next until you reach the Mailer configuration.
 
-Choose Configure own SMTP server
+Choose to Configure your own SMTP server
 
 <img src="./steps/step-01.png" style='width: 200px; max-width:100%;'/>
 
@@ -36,3 +36,19 @@ Fill in the following credentials:
 <img src="./steps/step-02.png" style='width: 800px; max-width:100%;'/>
 
 Then Next, complete other configurations if desired.
+
+
+# Custom domain instructions (IMPORTANT)
+
+By default, we set up a CNAME on elestio.app domain, but probably you will want to have your domain.
+
+**_Step1:_** Add your domain in the Elestio dashboard as explained here:
+
+    https://docs.elest.io/books/security/page/custom-domain-and-automated-encryption-ssltls
+
+**_Step2:_** Update the env vars to indicate your custom domain.
+Open Elestio dashboard > Service overview > click on `UPDATE CONFIG` button > Env tab there update `DOMAIN` with your real domain
+
+**_Step3:_** Now add the key `SHOPWARE_SKIP_WEBINSTALLER: 1` in your `Docker Compose` shopware container environment after the key `INSTALL_ADMIN_PASSWORD`
+
+You will start over with an instance configured with the correct custom domain name.
